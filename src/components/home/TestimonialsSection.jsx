@@ -10,7 +10,7 @@ const testimonials = [
     name: "Carlos Rodríguez",
     role: "Desarrollador",
     content:
-      "Los recordatorios inteligentes me han ayudado a cumplir todos mis deadlines. Increíble herramienta.",
+      "Las notificaciones inteligentes me han ayudado a cumplir todos mis deadlines. Increíble herramienta.",
     avatar: "/placeholder.svg?height=40&width=40",
   },
   {
