@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
-import { CheckCircle, Clock, ListTodo, Bell, ArrowRight } from "lucide-react";
+import { CheckCircle, Calendar1, Bell, ArrowRight,AudioLines } from "lucide-react";
 import { Button } from "../ui/button";
 
 const features = [
   {
-    icon: ListTodo,
-    title: "Gestión intuitiva",
-    description: "Organiza tus tareas de manera visual y sencilla.",
+    icon: AudioLines,
+    title: "Tareas por Voz",
+    description: "Agrega y gestiona tareas hablando.",
   },
   {
     icon: Bell,
-    title: "Recordatorios inteligentes",
-    description: "Nunca olvides una tarea importante.",
+    title: "Notificaciones Inteligentes",
+    description: "Recibe alertas según tus prioridades.",
   },
   {
-    icon: Clock,
-    title: "Seguimiento de tiempo",
-    description: "Controla cuánto tiempo dedicas a cada tarea.",
+    icon: Calendar1,
+    title: "Google Calendar",
+    description: "Agenda tus tareas fácilmente.",
   },
   {
     icon: CheckCircle,
@@ -51,7 +51,7 @@ export default function FeaturesPreview() {
                 className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 shadow-sm"
               >
                 <IconComponent className="h-12 w-12 text-blue-600" />
-                <h3 className="text-xl font-bold text-blue-800">
+                <h3 className="text-xl font-bold text-blue-800 min-h-[3rem] text-center">
                   {feature.title}
                 </h3>
                 <p className="text-center text-gray-600">
