@@ -13,6 +13,7 @@ export default function Header() {
     { name: "Características", href: "/features" },
     { name: "Precios", href: "/pricing" },
     { name: "Nosotros", href: "/about" },
+    { name: "Contacto", href: "/contact" },
   ];
 
   return (

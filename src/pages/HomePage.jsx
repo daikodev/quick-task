@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import HeroSection from "../components/home/HeroSection";
 import FeaturesPreview from "../components/home/FeaturesPreview";
 import TestimonialsSection from "../components/home/TestimonialsSection";
+import ContactSection from "../components/home/ContactSection";
 import CtaSection from "../components/home/CtaSection";
 import Footer from "../components/Footer";
 
@@ -14,6 +15,7 @@ export default function HomePage() {
         <HeroSection />
         <FeaturesPreview />
         <TestimonialsSection />
+        <ContactSection />
         <CtaSection />
       </main>
       <Footer />
