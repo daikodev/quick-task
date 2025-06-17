@@ -14,12 +14,7 @@ export default function CtaSection() {
             trabajar.
           </p>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center pt-4">
-            <Button
-              size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50"
-            >
-              Comenzar gratis
-            </Button>
+            
             <Link to="/pricing">
               <Button
                 size="lg"
