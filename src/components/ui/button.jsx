@@ -19,6 +19,8 @@ const Button = forwardRef(
 
     const variants = {
       default: "bg-primary text-primary-foreground hover:bg-primary/90",
+      blue: "bg-blue-600 hover:bg-blue-700 text-white",
+      border: "border border-blue-600 text-blue-600 hover:bg-blue-50 hover:text-black",
       destructive:
         "bg-destructive text-destructive-foreground hover:bg-destructive/90",
       outline:

@@ -16,13 +16,12 @@ export default function HeroSection() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg" variant="blue">
                 Comenzar gratis
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50"
+                variant="border"
               >
                 Ver demostración
               </Button>
