@@ -2,6 +2,20 @@ import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 export default function CtaSection() {
+  function enviarEvento(e) {
+    e.preventDefault();
+
+    gtag("event", "link", {
+      debug_mode: true,
+      event_category: "rrss",
+      event_label: "VerPrecios",
+    });
+
+    setTimeout(function () {
+      window.location.href = e.target.href;
+    }, 300);
+  }
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600">
       <div className="container mx-auto px-4 md:px-6 text-center">
@@ -14,8 +28,7 @@ export default function CtaSection() {
             trabajar.
           </p>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center pt-4">
-            
-            <Link to="/pricing">
+            <Link to="/pricing" onClick={enviarEvento(event)}>
               <Button
                 size="lg"
                 variant="outline"
