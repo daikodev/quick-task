@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 
 export default function CtaSection() {
+  const navigate = useNavigate();
+
   function enviarEvento(e) {
     e.preventDefault();
 
@@ -28,7 +30,7 @@ export default function CtaSection() {
             trabajar.
           </p>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center pt-4">
-            <Link to="/pricing" onClick={enviarEvento(event)}>
+            <Link to="/pricing" onClick={enviarEvento}>
               <Button
                 size="lg"
                 variant="outline"
