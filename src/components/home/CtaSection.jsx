@@ -7,12 +7,12 @@ export default function CtaSection() {
 
     gtag("event", "link", {
       debug_mode: true,
-      event_category: "rrss",
+      event_category: "Ventas",
       event_label: "VerPrecios",
     });
 
     setTimeout(function () {
-      window.location.href = e.target.href;
+      navigate("/pricing");
     }, 300);
   }
 
