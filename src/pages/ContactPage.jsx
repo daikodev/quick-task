@@ -2,7 +2,15 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactForm from "../components/contact/ContactForm";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+} from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -90,17 +98,26 @@ export default function ContactPage() {
                 <div className="mt-8 bg-gray-100 rounded-lg p-6">
                   <h3 className="font-medium text-gray-900 mb-2">Síguenos</h3>
                   <div className="flex space-x-4">
-                    <a href="#" className="text-gray-600 hover:text-blue-600">
-                      Twitter
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-blue-600 flex items-center space-x-1"
+                    >
+                      <Twitter className="h-5 w-5" />
+                      <span className="mt-">Twitter</span>
                     </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-600">
-                      Facebook
+                    <a
+                      href="https://www.facebook.com/people/QuickTask/61575548355064/"
+                      className="text-gray-600 hover:text-blue-600 flex items-center space-x-1"
+                    >
+                      <Facebook className="h-5 w-5" />
+                      <span className="mt-">Facebook</span>
                     </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-600">
-                      Instagram
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-blue-600">
-                      LinkedIn
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-blue-600 flex items-center space-x-1"
+                    >
+                      <Instagram className="h-5 w-5" />
+                      <span className="mt-">Instagram</span>
                     </a>
                   </div>
                 </div>
