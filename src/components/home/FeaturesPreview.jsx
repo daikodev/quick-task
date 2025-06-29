@@ -62,7 +62,7 @@ export default function FeaturesPreview() {
           })}
         </div>
         <div className="flex justify-center">
-          <Link to="/features">
+          <Link to="/features" id="caracteristics-link">
             <Button
               variant="outline"
               className="border-blue-600 text-blue-600 hover:bg-blue-50"
