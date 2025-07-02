@@ -9,11 +9,11 @@ export default function Header() {
   const location = useLocation();
 
   const navigation = [
-    { name: "Inicio", href: "/" },
-    { name: "Características", href: "/features" },
-    { name: "Precios", href: "/pricing" },
-    { name: "Nosotros", href: "/about" },
-    { name: "Contacto", href: "/contact" },
+    { name: "Inicio", href: "/", id: "inicio" },
+    { name: "Características", href: "/features", id: "caracteristics-link" },
+    { name: "Precios", href: "/pricing", id: "precio" },
+    { name: "Nosotros", href: "/about", id: "nosotros" },
+    { name: "Contacto", href: "/contact", id: "contacto" },
   ];
 
   return (
@@ -29,6 +29,7 @@ export default function Header() {
             <Link
               key={item.name}
               to={item.href}
+              id={item.id}
               className={`text-sm font-medium transition-colors hover:text-blue-600 ${
                 location.pathname === item.href
                   ? "text-blue-600"
