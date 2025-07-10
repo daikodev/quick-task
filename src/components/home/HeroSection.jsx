@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 export default function HeroSection() {
@@ -16,15 +17,19 @@ export default function HeroSection() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" variant="blue">
-                Comenzar gratis
-              </Button>
-              <Button
-                size="lg"
-                variant="border"
-              >
-                Ver demostración
-              </Button>
+              <Link to="/pricing" id="precio">
+                <Button size="lg" variant="blue">
+                  Comenzar gratis
+                </Button>
+              </Link>
+              <Link to="/contact" id="contacto">
+                <Button
+                  size="lg"
+                  variant="border"
+                >
+                  Ver demostración
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="flex items-center justify-center">

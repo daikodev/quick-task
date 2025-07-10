@@ -17,6 +17,7 @@ import {
   Tag,
   Filter,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const coreFeatures = [
   {
@@ -174,19 +175,23 @@ export default function FeaturesPage() {
                 necesitas tarjeta de crédito.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center pt-4">
-                <Button
-                  size="lg"
-                  className="bg-white text-blue-600 hover:bg-blue-50"
-                >
-                  Comenzar prueba gratuita
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-blue-700"
-                >
-                  Ver demostración
-                </Button>
+                <Link to="/pricing" id="precio">
+                  <Button
+                    size="lg"
+                    variant="black"
+                  >
+                    Comenzar prueba gratuita
+                  </Button>
+                </Link>
+                <Link to="/contact" id="contacto">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-white text-white hover:bg-blue-700"
+                  >
+                    Ver demostración
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
