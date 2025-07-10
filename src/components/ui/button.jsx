@@ -21,6 +21,8 @@ const Button = forwardRef(
       default: "bg-primary text-primary-foreground hover:bg-primary/90",
       blue: "bg-blue-600 hover:bg-blue-700 text-white",
       border: "border border-blue-600 text-blue-600 hover:bg-blue-50 hover:text-black",
+      white: "bg-white text-black hover:text-white hover:bg-opacity-50",
+      black: "bg-black text-white hover:bg-neutral-800 transition duration-200",
       destructive:
         "bg-destructive text-destructive-foreground hover:bg-destructive/90",
       outline:
