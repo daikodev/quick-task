@@ -1,6 +1,8 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 export default function PricingCard({ plan, isPopular = false }) {
   const {
@@ -12,7 +14,18 @@ export default function PricingCard({ plan, isPopular = false }) {
     buttonText,
     buttonVariant = "default",
   } = plan;
+  const navigate = useNavigate()
 
+function handlePricingButtonClick() {
+  
+    if (buttonText === "Comenzar gratis") {
+      toast.success("¡Has comenzado con el plan gratis!");
+    } else if (buttonText === "Suscribirse a Pro") {
+      toast.success("¡Ahora eres usuario Pro!");
+    } else if (buttonText === "Contactar ventas") {
+      navigate("/contact");
+    }
+  }
   return (
     <div
       className={`rounded-lg border bg-white p-8 shadow-sm relative ${
@@ -47,6 +60,7 @@ export default function PricingCard({ plan, isPopular = false }) {
           buttonVariant === "default" ? "bg-blue-600 hover:bg-blue-700" : ""
         }`}
         variant={buttonVariant}
+        onClick={handlePricingButtonClick}
       >
         {buttonText}
       </Button>
