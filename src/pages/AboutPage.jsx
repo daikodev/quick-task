@@ -30,25 +30,32 @@ const values = [
 
 const teamMembers = [
   {
-    name: "Ana Rodríguez",
-    role: "CEO & Fundadora",
+    name: "Daniel Anastacio",
+    role: "CEO & Fundador",
     description:
-      "Experta en productividad con más de 10 años de experiencia en tecnología.",
-    avatar: "/placeholder.svg?height=120&width=120",
+      "Experto en productividad con más de 10 años de experiencia en tecnología.",
+    avatar: "/work1.png",
   },
   {
-    name: "Miguel Torres",
+    name: "Miguel Mujica",
     role: "CTO & Co-fundador",
     description:
       "Ingeniero de software apasionado por crear experiencias de usuario excepcionales.",
-    avatar: "/placeholder.svg?height=120&width=120",
+    avatar: "/work2.png",
   },
   {
-    name: "Sofia Martín",
-    role: "Directora de Diseño",
+    name: "Miguel Yahuayre",
+    role: "Director de Diseño",
     description:
-      "Diseñadora UX/UI con un enfoque en la simplicidad y la usabilidad.",
-    avatar: "/placeholder.svg?height=120&width=120",
+      "Diseñador UX/UI con un enfoque en la simplicidad y la usabilidad.",
+    avatar: "/work3.png",
+  },
+  {
+    name: "Uriel Olcese",
+    role: "Gerente de Marketing",
+    description:
+      "Especialista en marketing digital con un enfoque en crecimiento orgánico.",
+    avatar: "/work4.png",
   },
 ];
 
@@ -107,7 +114,7 @@ export default function AboutPage() {
               </div>
               <div className="flex items-center justify-center">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/app.png?height=400&width=600"
                   width={600}
                   height={400}
                   alt="Equipo de QuickStart trabajando"
@@ -166,14 +173,14 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
                   className="flex flex-col items-center space-y-4 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
                 >
                   <img
-                    src={member.avatar || "/placeholder.svg"}
+                    src={member.avatar}
                     width={120}
                     height={120}
                     alt={member.name}
