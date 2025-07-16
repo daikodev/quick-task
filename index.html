@@ -1,26 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickTask - Organiza tus tareas</title>
+
+    <!-- Meta tags para SEO -->
     <meta
       name="description"
       content="QuickTask te ayuda a gestionar tus tareas diarias, establecer recordatorios y aumentar tu productividad."
     />
+    <link rel="canonical" href="https://quick-task-777.netlify.app/" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="gestión de tareas, productividad, recordatorios, QuickTask, tareas"
+    />
+    <meta name="author" content="QuickTask" />
+
+    <!-- Enlaces compartidos en RRSS -->
+    <meta property="og:title" content="QuickTask - Organiza tus tareas" />
+    <meta
+      property="og:description"
+      content="Gestiona tus tareas diarias con facilidad usando QuickTask."
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/Z63ysFT3/quick-task.jpg"
+    />
+    <meta property="og:url" content="https://quick-task-777.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="QuickTask - Organiza tus tareas" />
+    <meta
+      name="twitter:description"
+      content="Gestiona tus tareas diarias con facilidad usando QuickTask."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.ibb.co/Z63ysFT3/quick-task.jpg"
+    />
+
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WMF89SFW');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WMF89SFW");
+    </script>
     <!-- End Google Tag Manager -->
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "QuickTask",
+        "operatingSystem": "Web",
+        "applicationCategory": "ProductivityApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD"
+        },
+        "url": "https://quick-task-777.netlify.app/",
+        "description": "QuickTask te ayuda a gestionar tus tareas diarias, establecer recordatorios y aumentar tu productividad."
+      }
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMF89SFW"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WMF89SFW"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
