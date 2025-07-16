@@ -2,12 +2,12 @@
 
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { CheckSquare } from "lucide-react";
+import { CheckSquare, Menu } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Header() {
   const location = useLocation();
-
+  const [menuOpen, setMenuOpen] = React.useState(false);
   const navigation = [
     { name: "Inicio", href: "/", id: "inicio" },
     { name: "Características", href: "/features", id: "caracteristics-link" },
@@ -40,7 +40,40 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+
+      
+        <button
+          className="md:hidden flex items-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+          onClick={() => setMenuOpen((open) => !open)}
+          aria-label="Abrir menú"
+        >
+          <Menu className="h-6 w-6 text-blue-600" />
+        </button>
       </div>
+
+    
+      {menuOpen && (
+        <nav className="md:hidden bg-white border-t shadow-lg px-6 py-4 absolute w-full left-0 top-16 z-50 animate-fade-in">
+          <ul className="flex flex-col gap-4">
+            {navigation.map((item) => (
+              <li key={item.name}>
+                <Link
+                  to={item.href}
+                  id={item.id}
+                  className={`block text-base font-medium transition-colors py-2 px-2 rounded hover:bg-blue-50 hover:text-blue-700 ${
+                    location.pathname === item.href
+                      ? "text-blue-600 font-bold"
+                      : "text-gray-700"
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 }
