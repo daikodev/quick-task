@@ -26,7 +26,7 @@ export default function FeatureCard({
     <div
       className={`flex flex-col items-start space-y-4 rounded-lg border border-gray-200 p-6 shadow-sm ${bgClass}`}
     >
-      <IconComponent className="h-12 w-12 text-blue-600" />
+      <IconComponent className="h-12 w-12 text-blue-600" aria-hidden="true" />
       <div>
         <h3 className="text-xl font-bold text-blue-800 mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>

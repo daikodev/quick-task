@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
         </div>
         <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <div
+            <article
               key={index}
               className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
             >
@@ -56,8 +56,10 @@ export default function TestimonialsSection() {
                   <p className="text-sm text-gray-500">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="mt-4 text-gray-600">"{testimonial.content}"</p>
-            </div>
+              <blockquote className="mt-4 text-gray-600">
+                "{testimonial.content}"
+              </blockquote>
+            </article>
           ))}
         </div>
       </div>

@@ -50,7 +50,7 @@ export default function FeaturesPreview() {
                 key={index}
                 className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 shadow-sm"
               >
-                <IconComponent className="h-12 w-12 text-blue-600" />
+                <IconComponent className="h-12 w-12 text-blue-600" aria-hidden="true" />
                 <h3 className="text-xl font-bold text-blue-800 min-h-[3rem] text-center">
                   {feature.title}
                 </h3>
@@ -66,6 +66,7 @@ export default function FeaturesPreview() {
             <Button
               variant="outline"
               className="border-blue-600 text-blue-600 hover:bg-blue-50"
+              aria-label="Ver todas las características de QuickStart"
             >
               Ver todas las características
               <ArrowRight className="ml-2 h-4 w-4" />
