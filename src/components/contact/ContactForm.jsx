@@ -89,7 +89,11 @@ export default function ContactForm() {
           />
         </div>
 
-        <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
+        <Button 
+          type="submit" 
+          className="w-full bg-blue-600 hover:bg-blue-700"
+          aria-label="Enviar mensaje de contacto"
+        >
           Enviar mensaje
         </Button>
 

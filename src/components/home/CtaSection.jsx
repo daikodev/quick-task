@@ -21,6 +21,7 @@ export default function CtaSection() {
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-blue-700"
+                aria-label="Ver precios y planes disponibles"
               >
                 Ver precios
               </Button>

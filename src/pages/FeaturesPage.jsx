@@ -179,6 +179,7 @@ export default function FeaturesPage() {
                   <Button
                     size="lg"
                     variant="black"
+                    aria-label="Comenzar prueba gratuita de 14 días"
                   >
                     Comenzar prueba gratuita
                   </Button>
@@ -188,6 +189,7 @@ export default function FeaturesPage() {
                     size="lg"
                     variant="outline"
                     className="border-white text-white hover:bg-blue-700"
+                    aria-label="Ver demostración del producto"
                   >
                     Ver demostración
                   </Button>

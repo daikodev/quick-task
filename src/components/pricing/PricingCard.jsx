@@ -72,6 +72,7 @@ function handlePricingButtonClick() {
         }`}
         variant={buttonVariant}
         onClick={handlePricingButtonClick}
+        aria-label={`${buttonText} - Plan ${name}`}
       >
         {buttonText}
       </Button>
