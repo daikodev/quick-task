@@ -26,6 +26,16 @@ function handlePricingButtonClick() {
       navigate("/contact");
     }
   }
+
+  function getButtonId() {
+    if (buttonText === "Comenzar gratis") {
+      return "plan-gratis";
+    } else if (buttonText === "Suscribirse a Pro") {
+      return "plan-pro";
+    } else if (buttonText === "Contactar ventas") {
+      return "plan-empresarial";
+    }
+  }
   return (
     <div
       className={`rounded-lg border bg-white p-8 shadow-sm relative ${
@@ -56,6 +66,7 @@ function handlePricingButtonClick() {
         ))}
       </ul>
       <Button
+        id={getButtonId()}
         className={`w-full ${
           buttonVariant === "default" ? "bg-blue-600 hover:bg-blue-700" : ""
         }`}
