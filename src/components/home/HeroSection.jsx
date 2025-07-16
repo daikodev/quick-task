@@ -39,7 +39,8 @@ export default function HeroSection() {
                 height={600}
                 alt="Vista previa de la aplicación QuickStart"
                 className="w-full object-cover"
-                loading="lazy"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
           </div>
