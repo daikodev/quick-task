@@ -11,7 +11,7 @@ export default function HeroSection() {
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-blue-800">
                 Organiza tus tareas de forma simple y eficiente
               </h1>
-              <p className="max-w-[600px] text-gray-600 md:text-xl">
+              <p className="max-w-[600px] text-gray-800 md:text-xl">
                 QuickStart te ayuda a gestionar tus tareas diarias, establecer
                 recordatorios y aumentar tu productividad de manera intuitiva.
               </p>

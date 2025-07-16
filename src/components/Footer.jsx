@@ -9,26 +9,26 @@ export default function Footer() {
           <CheckSquare className="h-6 w-6 text-blue-600" />
           <span className="text-xl font-bold text-blue-600">QuickStart</span>
         </div>
-        <p className="text-center text-sm text-gray-500 md:text-left">
+        <p className="text-center text-sm text-gray-700 md:text-left">
           © {new Date().getFullYear()} QuickStart. Todos los derechos
           reservados.
         </p>
         <div className="flex gap-4">
           <Link
             to="/terms"
-            className="text-sm text-gray-500 hover:text-blue-600"
+            className="text-sm text-gray-700 hover:text-blue-600"
           >
             Términos
           </Link>
           <Link
             to="/privacy"
-            className="text-sm text-gray-500 hover:text-blue-600"
+            className="text-sm text-gray-700 hover:text-blue-600"
           >
             Privacidad
           </Link>
           <Link
             to="/contact"
-            className="text-sm text-gray-500 hover:text-blue-600"
+            className="text-sm text-gray-700 hover:text-blue-600"
           >
             Contacto
           </Link>

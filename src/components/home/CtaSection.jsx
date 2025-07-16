@@ -11,12 +11,12 @@ export default function CtaSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
             Comienza tu viaje hacia la productividad
           </h2>
-          <p className="text-white/90 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Únete a miles de usuarios que ya han transformado su forma de
             trabajar.
           </p>
           <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center pt-4">
-            <Link to="/pricing" id='precio'>
+            <Link to="/pricing" id="precio">
               <Button
                 size="lg"
                 variant="outline"
