@@ -23,10 +23,7 @@ export default function HeroSection() {
                 </Button>
               </Link>
               <Link to="/contact" id="contacto">
-                <Button
-                  size="lg"
-                  variant="border"
-                >
+                <Button size="lg" variant="border">
                   Ver demostración
                 </Button>
               </Link>
@@ -35,7 +32,7 @@ export default function HeroSection() {
           <div className="flex items-center justify-center">
             <div className="relative w-full max-w-md overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg">
               <img
-                src="/inicio.png?height=600&width=400"
+                src="/inicio.webp?height=600&width=400"
                 width={400}
                 height={600}
                 alt="Vista previa de la aplicación QuickStart"

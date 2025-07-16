@@ -4,21 +4,21 @@ const testimonials = [
     role: "Diseñadora UX",
     content:
       "QuickStart ha revolucionado mi flujo de trabajo. La interfaz es tan intuitiva que no necesité tutorial.",
-    avatar: "/usuario1.png?height=40&width=40",
+    avatar: "/usuario1.webp?height=40&width=40",
   },
   {
     name: "Carlos Rodríguez",
     role: "Desarrollador",
     content:
       "Las notificaciones inteligentes me han ayudado a cumplir todos mis deadlines. Increíble herramienta.",
-    avatar: "/usuario2.png?height=40&width=40",
+    avatar: "/usuario2.webp?height=40&width=40",
   },
   {
     name: "Laura Martínez",
     role: "Estudiante",
     content:
       "Perfecto para organizar mis estudios. La sincronización entre dispositivos es impecable.",
-    avatar: "/usuario3.png?height=40&width=40",
+    avatar: "/usuario3.webp?height=40&width=40",
   },
 ];
 

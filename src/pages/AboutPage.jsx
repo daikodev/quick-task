@@ -34,28 +34,28 @@ const teamMembers = [
     role: "CEO & Fundador",
     description:
       "Experto en productividad con más de 10 años de experiencia en tecnología.",
-    avatar: "/work1.png",
+    avatar: "/work1.webp",
   },
   {
     name: "Miguel Mujica",
     role: "CTO & Co-fundador",
     description:
       "Ingeniero de software apasionado por crear experiencias de usuario excepcionales.",
-    avatar: "/work2.png",
+    avatar: "/work2.webp",
   },
   {
     name: "Miguel Yahuayre",
     role: "Director de Diseño",
     description:
       "Diseñador UX/UI con un enfoque en la simplicidad y la usabilidad.",
-    avatar: "/work3.png",
+    avatar: "/work3.webp",
   },
   {
     name: "Uriel Olcese",
     role: "Gerente de Marketing",
     description:
       "Especialista en marketing digital con un enfoque en crecimiento orgánico.",
-    avatar: "/work4.png",
+    avatar: "/work4.webp",
   },
 ];
 
@@ -114,7 +114,7 @@ export default function AboutPage() {
               </div>
               <div className="flex items-center justify-center">
                 <img
-                  src="/app.png?height=400&width=600"
+                  src="/app.webp?height=400&width=600"
                   width={600}
                   height={400}
                   alt="Equipo de QuickStart trabajando"
