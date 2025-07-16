@@ -119,6 +119,7 @@ export default function AboutPage() {
                   height={400}
                   alt="Equipo de QuickStart trabajando"
                   className="rounded-lg shadow-lg"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -185,6 +186,7 @@ export default function AboutPage() {
                     height={120}
                     alt={member.name}
                     className="rounded-full"
+                    loading="lazy"
                   />
                   <div className="text-center">
                     <h3 className="text-xl font-bold text-blue-800">

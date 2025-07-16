@@ -33,10 +33,13 @@ export default function HeroSection() {
             <div className="relative w-full max-w-md overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg">
               <img
                 src="/inicio.webp?height=600&width=400"
+                srcSet="/inicio.webp?height=300&width=200 200w, /inicio.webp?height=600&width=400 400w"
+                sizes="(max-width: 768px) 200px, 400px"
                 width={400}
                 height={600}
                 alt="Vista previa de la aplicación QuickStart"
                 className="w-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
