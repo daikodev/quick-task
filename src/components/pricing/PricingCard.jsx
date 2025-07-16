@@ -35,7 +35,6 @@ function handlePricingButtonClick() {
     } else if (buttonText === "Contactar ventas") {
       return "plan-empresarial";
     }
-    return "btn-pricing-default";
   }
   return (
     <div
