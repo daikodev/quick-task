@@ -12,17 +12,17 @@ export default function Header() {
   // Manejar tecla Escape para cerrar el menú
   React.useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === 'Escape' && menuOpen) {
+      if (event.key === "Escape" && menuOpen) {
         setMenuOpen(false);
       }
     };
 
     if (menuOpen) {
-      document.addEventListener('keydown', handleKeyDown);
+      document.addEventListener("keydown", handleKeyDown);
     }
 
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener("keydown", handleKeyDown);
     };
   }, [menuOpen]);
 
@@ -35,7 +35,7 @@ export default function Header() {
   ];
 
   return (
-    <header 
+    <header
       className="sticky top-0 z-40 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60"
       role="banner"
     >
@@ -45,7 +45,11 @@ export default function Header() {
           <span className="text-xl font-bold text-blue-600">QuickStart</span>
         </Link>
 
-        <nav className="hidden md:flex gap-6" role="navigation" aria-label="Menú principal">
+        <nav
+          className="hidden md:flex gap-6"
+          role="navigation"
+          aria-label="Menú principal"
+        >
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -62,7 +66,6 @@ export default function Header() {
           ))}
         </nav>
 
-      
         <button
           className="md:hidden flex items-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
           onClick={() => setMenuOpen((open) => !open)}
@@ -74,9 +77,8 @@ export default function Header() {
         </button>
       </div>
 
-    
       {menuOpen && (
-        <nav 
+        <nav
           id="mobile-menu"
           className="md:hidden bg-white border-t shadow-lg px-6 py-4 absolute w-full left-0 top-16 z-50 animate-fade-in"
           role="navigation"

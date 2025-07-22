@@ -18,10 +18,8 @@ export default function HeroSection() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link to="/pricing" id="precio">
-                <Button size="lg" variant="blue" aria-label="Comenzar gratis con QuickStart">
-                  Comenzar gratis
-                </Button>
-              </Link>
+  <Button size="lg" variant="blue" aria-label="Comenzar gratis con QuickStart">Comenzar gratis</Button>
+</Link>
               <Link to="/contact" id="contacto">
                 <Button size="lg" variant="border" aria-label="Ver demostración de QuickStart">
                   Ver demostración
